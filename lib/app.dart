@@ -26,7 +26,7 @@ class _AppState extends State<App> {
   }
 
   Future getPopularDataFromWebsite() async {
-    final mainSite = Uri.parse('https://gogoanimehd.io/popular.html');
+    final mainSite = Uri.parse('https://anitaku.so/popular.html');
     final response = await http.get(mainSite);
     dom.Document document = dom.Document.html(response.body);
 
@@ -53,7 +53,7 @@ class _AppState extends State<App> {
   }
 
   Future getDataFromWebsite() async {
-    final siteUrl = Uri.parse('https://gogoanimehd.io');
+    final siteUrl = Uri.parse('https://anitaku.so/home.html');
     final response = await http.get(siteUrl);
     dom.Document document = dom.Document.html(response.body);
 
